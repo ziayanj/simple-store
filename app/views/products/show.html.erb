@@ -4,3 +4,8 @@
   <strong>Price:</strong>
   <%= number_to_currency @product.price %>
 </p>
+
+<p>
+  <%# <a href="/products">Back</a> %>
+  <%= link_to 'Back', products_path %>
+</p>
