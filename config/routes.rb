@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users, path_names: { sign_in: 'login' }
   root to: 'products#index'
 
   resources :products, only: [:index, :show, :new, :create, :edit, :update, :destroy]
